@@ -23,11 +23,11 @@ module "ec2"{
   ec2-sg = module.ec2-sg.opstrain-ec2-sg
   opstrain-ec2-eip = module.vpc.opstrain-ec2-eip
 }
-/*module "ecs" {
+module "ecs" {
   source = "./modules/ecs"
 
   ec2-sg = module.ec2-sg.opstrain-ec2-sg
   opstrain-public1 = module.vpc.opstrain-public1
   opstrain-public2 = module.vpc.opstrain-public2
 }
-*/
+
